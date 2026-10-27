@@ -1,0 +1,27 @@
+[gate] attention              -> PASS (1/9)
+[gate] perception             -> PASS (5/9)
+[gate] memory                 -> PASS (5/9)
+[gate] world_model            -> PASS (5/9)
+[gate] action_executor        -> PASS (8/9)
+[gate] scoring                -> PASS (3/9)
+[gate] physiology             -> PASS (7/9)
+[gate] economy                -> PASS (5/9)
+[gate] social                 -> PASS (1/9)
+[gate] policy@ablate          -> PASS (7/9)
+[gate] policy@perturb:random  -> PASS (5/9)
+[gate] economy@wait-billing   -> PASS
+[gate] economy@loan-repay     -> PASS
+[gate] world_model@prior-calibration -> PASS
+[gate] attention@probe-cap    -> PASS
+[gate] physiology@novice-gain -> PASS
+[gate] world_model@action-conditional -> PASS
+[gate] scoring@action-bound   -> PASS
+[gate] social@independent-arousal -> PASS
+[gate] fatigue@body-limit     -> PASS
+[gate] voi@accounting         -> PASS
+[gate] identity@replay        -> PASS (same=0.00e+00, random=1.491)
+[gate] sleep@consolidation    -> PASS (alpha_fail 2.0->4.0, p_pess=0.333)
+[gate] world@mutation         -> PASS (res 10.0->0.0->1.5, stateA=-0.783 < stateB=-0.600)
+[gate] llm@policy-valid       -> PASS (action=task, reason_ok, fallback_ok=task, parse_failed=1)
+[gate] audit@hashchain        -> PASS (链完整[prediction: 链长 2 完整 | event: 链长 2 完整], 篡改检出, 落盘125行可重读, 消融无记录)
+GATE PASS (26 pass, 0 placeholder, 0 skipped)
